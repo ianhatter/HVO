@@ -1,0 +1,286 @@
+body,
+html {
+margin:0px;
+    font-family: 'Montserrat', sans-serif;
+  background: url(./img/ocean.jpg) no-repeat center center fixed; 
+  background-size:cover;
+
+}
+
+.logo{
+	 display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-icon{
+	 background: transparent;
+  border: 1px solid #fff;
+  width: 50px;
+  height: 50px;
+  margin: 15px 39px 0 auto;
+  position: absolute;
+  cursor: pointer;
+  transition: background 0.5s;
+  border-radius: 5px;
+  margin-left:10px;
+}
+
+.menu-icon span, .menu-icon span:before, .menu-icon span:after{
+      cursor: pointer;
+    border-radius: 1px;
+    height: 2px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    display: block;
+    content: '';
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-icon span:before {
+    left: 0;
+    top: -10px;
+}
+
+.menu-icon span:after {
+    left: 0;
+    top: 10px;
+}
+
+
+a{
+  text-decoration:none;
+  color:#FFFFFF;
+  font-size:4rem;
+ font-family: 'Kdam Thmor Pro';}
+
+ a:hover{
+  color:#0E1012;
+ }
+
+.menu-icon.active {
+  background: rgba(250,250,250,0.2);
+}
+
+.menu-icon.active span {
+  background-color: transparent;
+}
+
+.menu-icon.active span:before,
+.menu-icon.active span:after {
+  top: 0;
+}
+
+.menu-icon.active span:before {
+  transform: rotate(135deg);
+}
+
+.menu-icon.active span:after {
+  transform: rotate(-135deg);
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.zone {
+    color:#FFF;
+    border-radius:4px;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.box {
+    grid-gap:50px;
+    background-color: #111 ;
+}
+
+
+.footer{
+  position:relative ;
+  bottom:0px;
+  width:97.3%;
+  text-align:center;
+    font-size:15px;
+}
+
+.Zone2{
+    border-radius:4px;
+    transition: all 0.3s linear;
+    display:grid;
+  grid-gap:50px;
+  background-image: url('./img/borabora.jpg');
+  height:750px;
+
+}
+
+.Zone3{
+  border-radius:4px;
+    transition: all 0.3s linear;
+    background-image: url('./img/signup.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+  height:auto;
+  opacity:50%;
+
+}
+
+.subhead{
+  padding-top:15px;
+  font-family:papyrus;
+  font-size:50px;
+}
+
+.celanupimg{
+  margin:30px;
+}
+
+.container{
+  padding-top:30px;
+  background-color: #111;
+  height:750px;
+  width:fill;
+}
+
+.signup{
+ background-color:#000000;
+  opacity:100%;
+}
+
+.Signupbutton{
+      font-size: 11px;
+      text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    color:white;
+    padding-bottom:300px;
+  }
+
+.contactheader{
+color:black;
+font-size:4em;
+margin-top:0px;
+padding-top:30px;
+}
+
+.intro{
+  margin:30px;
+  font-size:25px;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.contactdescrip{
+font-size:1.5em;
+margin-right:200px;
+margin-left:200px;
+padding-top:100px;
+padding-bottom:130px;
+}
+
+.signuplink{
+  padding:16px 32px;
+  background-color:dodgerblue;
+  border-radius:20px;
+  font-size:30px;
+}
+
+.signuplink:hover{
+  background-color:#00bfff;
+}
+
+.Boxzone2{
+  background-color: white;
+    padding: 100px;
+    margin: 30px;
+}
+
+.productinfo{
+font-size:3.5em;
+ font-family: 'Montserrat', sans-serif;
+ padding-bottom:30px;
+}
+
+.productresults{
+  font-size:1.5em;
+}
+
+.boxzone2design{
+font-size:2.5em;
+margin:0px;
+padding:0px;
+}
+
+h1{
+  color:#FFFFFF;
+   padding-bottom:40%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:60px;
+font-family:Papyrus;
+}
+h2{
+  color:#FFFFFF;
+display:flex;
+align-items:center;
+justify-content:center;
+ font-family: 'Montserrat', sans-serif;
+font-style:italic;
+}
+
+
+footer{
+ background-color:#696969    ;
+  padding:20px;
+  }
+
